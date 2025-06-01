@@ -6,6 +6,7 @@ import Steps from "./components/Steps";
 import Events from "./components/Events";
 import Testimonials from "./components/Testimonials";
 import Updates from "./components/Updates";
+import Footer from "./components/Footer";
 const Home = () => {
   return (
     <main className="w-full">
@@ -16,6 +17,7 @@ const Home = () => {
       <Events />
       <Testimonials />
       <Updates/>
+      <Footer/>
     </main>
   );  
 };

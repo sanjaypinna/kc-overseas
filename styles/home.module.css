@@ -41,3 +41,27 @@
 .services-card {
   box-shadow: 0px 8px 25px 0px #0000001a;
 }
+
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: transparent;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0B1626;
+  z-index: -1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 78%;
+  border-bottom-right-radius: 78%;
+  transform: scaleX(1.6) scaleY(-1); /* <- flip curve to top */
+}
