@@ -213,7 +213,7 @@ const StepCarousel = () => {
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-center space-x-6 lg:space-x-8">
+      <div className="flex justify-center gap-2">
         <button
           onClick={prevStep}
           disabled={activeIndex === 0}
