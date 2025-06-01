@@ -45,7 +45,7 @@ const Services = () => {
           ))}
         </div>
         <button className="bg-gradient-to-l font-semibold text-sm from-[#FF6A56] to-[#FDAF4D] text-white px-4 py-3 rounded-lg">
-        Enquiry Now
+          Enquire Now
         </button>
         <div className="flex flex-col justify-center pt-6 lg:flex-row gap-8 lg:gap-16 items-center text-center lg:text-left">
           <div>
@@ -61,7 +61,10 @@ const Services = () => {
               university even before you do!
             </p>
             {keyPoints.map((point) => (
-              <div className="flex items-start md:items-center lg:items-center gap-2" key={point}>
+              <div
+                className="flex items-start md:items-center lg:items-center gap-2"
+                key={point}
+              >
                 <div className=" p-2 bg-white rounded-full shadow-sm w-fit">
                   <Star fill="#FDAF4D" stroke="ffff" size={17} />
                 </div>
