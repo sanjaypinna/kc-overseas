@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-[#6C48F0] w-full p-5 text-white relative">
+    <div className="bg-[#6C48F0] w-full p-5 text-white sticky top-0 z-50">
       <div className="container m-auto flex justify-between items-center">
         <a href="">
           <Image src="/kc.svg" alt="logo" width={100} height={45} />
