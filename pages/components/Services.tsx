@@ -28,7 +28,7 @@ const Services = () => {
     "High Value Scholarships and Study Loans",
   ];
   return (
-    <div className=" px-6 py-10 lg:p-16">
+    <div className=" px-8 py-10 lg:p-16">
       <div className="container flex flex-col items-center m-auto justify-center gap-10">
         <h1 className="text-[26px] lg:text-[42px] font-semibold">
           Services we provide
@@ -44,8 +44,8 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <button className="bg-gradient-to-l font-semibold text-sm from-[#FF6A56] to-[#FDAF4D] text-white px-4 py-2 rounded">
-          Enquiry Now
+        <button className="bg-gradient-to-l font-semibold text-sm from-[#FF6A56] to-[#FDAF4D] text-white px-4 py-3 rounded-lg">
+          Enquire Now
         </button>
         <div className="flex flex-col justify-center pt-6 lg:flex-row gap-8 lg:gap-16 items-center text-center lg:text-left">
           <div>
@@ -55,7 +55,7 @@ const Services = () => {
             <h2 className="text-[26px] font-semibold">
               Realize your global ambitions with us
             </h2>
-            <p className="pb-5 pt-5 lg:pt-0 ">
+            <p className="pb-5 pt-5 lg:pt-0 text-start">
               With a keen ear for your choices and preferences, our counselling
               experience is so seamless that you will land in your dream
               university even before you do!

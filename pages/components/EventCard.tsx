@@ -95,10 +95,11 @@ const EventCardBlock = ({
         expanded ? "flex flex-col h-[500px]" : "flex h-[230px]"
       }`}
     >
+      {/* Fixed height container for image */}
       <div
-        className={`relative object-contain ${
+        className={`relative ${
           expanded
-            ? "w-full h-[300px] md:h-[280px]"
+            ? "h-[280px] w-full" // consistent height for carousel images
             : "w-1/3 h-full min-h-[140px]"
         }`}
       >
@@ -106,29 +107,32 @@ const EventCardBlock = ({
           src={event.image}
           alt={event.title}
           fill
-          className="object-cover"
+          className="object-cover rounded-t-xl"
         />
       </div>
+
       <div
         className={`p-6 flex flex-col gap-1.5 items-start text-left ${
-          expanded ? "" : "w-2/3"
+          expanded ? "flex-1" : "w-2/3"
         }`}
       >
         <p className="text-sm text-blue-600 font-medium">{event.dateTime}</p>
-        <h3 className=" text-[22px] ">{event.title}</h3>
+        <h3 className="text-[20px] font-semibold leading-snug">
+          {event.title}
+        </h3>
         <p
           className="text-gray-600 text-left line-clamp-2"
-          title={event.description} // Tooltip shown on hover
+          title={event.description}
         >
-          {event.description}...
+          {event.description}
         </p>
-
-        <button className="text-[#FF7361]  font-semibold inline-flex items-center pt-2">
+        <button className="text-[#FF7361] font-semibold inline-flex items-center pt-2">
           Register Now <ChevronRight className="ml-1 w-4 h-4" />
         </button>
       </div>
     </div>
   );
 };
+
 
 export default EventCard;
