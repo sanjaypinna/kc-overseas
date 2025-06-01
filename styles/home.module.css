@@ -1,0 +1,39 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-section > div {
+  background: none;
+}
+
+/* Large screens and above */
+@media screen and (min-width: 1024px) {
+  .hero-section > div {
+    background: url("/intro_bg.png") no-repeat center center;
+  }
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6c48f0;
+  z-index: -1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 100% 60%;
+  border-bottom-right-radius: 100% 60%;
+  transform: scaleX(1.8);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section::before {
+    border-bottom-left-radius: 100% 80%;
+    border-bottom-right-radius: 100% 80%;
+    transform: scaleX(1.6);
+  }
+}
