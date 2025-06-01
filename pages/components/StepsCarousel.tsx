@@ -179,12 +179,15 @@ const StepCarousel = () => {
 
                 {/* Card Content */}
                 <div
-                  className={`bg-white rounded-3xl w-[300px] h-[200px] lg:w-[400px] lg:h-[240px] p-6 lg:p-8 shadow-sm  transition-all duration-500 ${
+                  className={`relative bg-white rounded-3xl w-[300px] h-[200px] lg:w-[400px] lg:h-[240px] p-6 lg:p-8 shadow-sm  transition-all duration-500 ${
                     isActive ? "transform scale-105 shadow-lg" : "opacity-50"
                   }`}
                 >
+                  {/* Triangle on top */}
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <div className="w-0 h-0 border-l-[12px] border-r-[12px] border-b-[12px] border-l-transparent border-r-transparent border-b-white"></div>
+                  </div>
                   <div className="text-center mt-4">
-                   
                     {/* Icon */}
                     <div
                       className={`inline-flex items-center justify-center w-14 h-14 lg:w-16 lg:h-16 rounded-t-full ${step.iconBg} mb-4 lg:mb-6`}
