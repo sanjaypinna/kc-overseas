@@ -45,7 +45,7 @@ const Services = () => {
           ))}
         </div>
         <button className="bg-gradient-to-l font-semibold text-sm from-[#FF6A56] to-[#FDAF4D] text-white px-4 py-3 rounded-lg">
-          Enquire Now
+        Enquiry Now
         </button>
         <div className="flex flex-col justify-center pt-6 lg:flex-row gap-8 lg:gap-16 items-center text-center lg:text-left">
           <div>

@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="bg-[#6C48F0] w-full p-5 text-white sticky top-0 z-50">
       <div className="container m-auto flex justify-between items-center">
         <a href="">
-          <Image src="/kc.svg" alt="logo" width={100} height={45} />
+          <Image src="/kc.svg" alt="logo" width={125} height={45} />
         </a>
         {/* Desktop Nav */}
         <div className="hidden lg:flex gap-6 items-center font-semibold">

@@ -25,7 +25,7 @@ const Intro = () => {
         </p>
         <div className="flex items-center flex-col md:flex-row lg:flex-row gap-5">
           <button className="bg-gradient-to-l font-semibold text-sm from-[#FF6A56] to-[#FDAF4D] text-white px-4 py-2 rounded">
-            Enquiry Now
+            Enquire Now
           </button>
           <div className="flex items-center gap-2">
             <button className="bg-white p-2 rounded-full">

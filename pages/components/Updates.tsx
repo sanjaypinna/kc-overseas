@@ -52,13 +52,13 @@ const Updates = () => {
           >
             <div>
               <h2 className="text-4xl font-semibold mb-6">We’re Hiring!</h2>
-              <p className="max-w-[300px]">
+              <p className="max-w-[300px] lg:text-[22px]">
                 KC continues recruitments for its offices across India and Asia
                 even during the unprecedented times of Covid.
               </p>
             </div>
             <div>
-              <button className="text-[#FF7361] font-semibold px-4 py-2 bg-white rounded-md">
+              <button className="text-[#FF7361] font-semibold px-6 py-2 bg-white rounded-md">
                 Apply Now
               </button>
             </div>
@@ -145,7 +145,7 @@ const Updates = () => {
             ))}
           </div>
         </div>
-        <button className="text-[#FF7361] text-sm font-semibold w-full flex justify-center lg:pt-10 pt-6">
+        <button className="text-[#FF7361] font-semibold w-full flex justify-center items-center lg:pt-10 pt-6">
           More News <ChevronRight className="ml-1 w-4 h-4" />
         </button>
       </div>

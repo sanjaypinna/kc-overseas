@@ -75,7 +75,7 @@ const EventCard = () => {
           <EventCardBlock event={events[2]} expanded={false} />
         </div>
       </div>
-      <button className="text-[#FF7361] text-sm font-semibold inline-flex items-center pt-6">
+      <button className="text-[#FF7361]  font-semibold inline-flex items-center pt-6">
         See More <ChevronRight className="ml-1 w-4 h-4" />
       </button>
     </>
@@ -116,8 +116,8 @@ const EventCardBlock = ({
           expanded ? "flex-1" : "w-2/3"
         }`}
       >
-        <p className="text-sm text-blue-600 font-medium">{event.dateTime}</p>
-        <h3 className="text-[20px] font-semibold leading-snug">
+        <p className="text-sm text-blue-600 ">{event.dateTime}</p>
+        <h3 className="text-[20px]  leading-snug">
           {event.title}
         </h3>
         <p
