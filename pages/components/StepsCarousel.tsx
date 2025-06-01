@@ -111,7 +111,6 @@ const StepCarousel = () => {
   // Calculate which cards to show - modified for 2 cards at start
   const getVisibleCards = () => {
     if (activeIndex === 0) {
-      // Show only first 2 cards when starting
       return itemsPerView === 1 ? [0] : [0, 1];
     }
 
@@ -119,7 +118,6 @@ const StepCarousel = () => {
     let startIndex = Math.max(0, activeIndex - sideCards);
     const endIndex = Math.min(steps.length - 1, startIndex + itemsPerView - 1);
 
-    // Adjust if we're at the end
     if (endIndex - startIndex + 1 < itemsPerView) {
       startIndex = Math.max(0, endIndex - itemsPerView + 1);
     }
@@ -135,14 +133,13 @@ const StepCarousel = () => {
 
   return (
     <div className="w-full max-w-6xl mt-10 mx-auto p-8">
-      {/* Title */}
 
       {/* Carousel Content */}
       <div className="relative mb-8">
         <div
           className={`flex items-start space-x-4 lg:space-x-6 gap-10 ${
             activeIndex === 0 && itemsPerView > 1
-              ? "justify-center lg:ml-[30%]"
+              ? "justify-center xl:ml-[30%]"
               : "justify-center"
           }`}
         >
@@ -162,7 +159,6 @@ const StepCarousel = () => {
                     : "w-56"
                 } `}
               >
-                {/* Step Number Above Card - Centered */}
                 <div className="flex justify-center mb-6 relative">
                   {/* Step Number */}
                   <button
